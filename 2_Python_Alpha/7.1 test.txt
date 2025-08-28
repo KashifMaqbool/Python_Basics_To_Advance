@@ -1,0 +1,2 @@
+This is as example of File Writing. 
+All the data which is already present in the file will be overwritten by these lines.
