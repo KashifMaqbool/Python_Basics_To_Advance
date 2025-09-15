@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #f9f9f9; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #555; margin-top: 20px; }
+        ul, ol { margin: 10px 0 20px 40px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #ecf0f1; }
+        code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+        .recap { background: #ecf9f2; padding: 10px; border-left: 5px solid #27ae60; }
+    </style>
+</head>
+<body>
+
+    <h1>Overview</h1>
+    <ul>
+        <li>Testing</li>
+        <li>Python Debugger</li>
+        <li>Decorators</li>
+        <li>Lambda</li>
+        <li>Code Profiling</li>
+    </ul>
+
+    <h2>Introduction to Testing</h2>
+    <ul>
+        <li>Once you write code, it is never the final version. There is always room for improvement.</li>
+        <li>You are always looking to refactor code, making it more efficient, faster, cleaner, or more Pythonic.</li>
+        <li>Sometimes, while improving code, we drift away from its original intent.</li>
+        <li>Testing ensures your code always behaves as intended.</li>
+        <li>This is known as <b>testing</b> or <b>unit testing</b>.</li>
+    </ul>
+
+    <h3>Unit Testing</h3>
+    <ul>
+        <li>Unit testing is used in every programming language to create test cases.</li>
+        <li>These tests ensure code integrity and reduce errors.</li>
+        <li>In Python, the <code>unittest</code> library provides a framework for writing tests.</li>
+    </ul>
+
+    <h3>Testing Behavior</h3>
+    <ul>
+        <li>Ensures functions, classes, and variables behave as intended.</li>
+        <li>Common methods:
+            <ul>
+                <li><code>assertTrue</code></li>
+                <li><code>assertEqual</code></li>
+            </ul>
+        </li>
+        <li><code>unittest</code> includes many additional test methods.</li>
+    </ul>
+
+    <h3>Common unittest Methods</h3>
+    <table>
+        <tr><th>Method</th><th>Description</th></tr>
+        <tr><td>assertEqual(a, b)</td><td>Tests equality of a and b</td></tr>
+        <tr><td>assertNotEqual(a, b)</td><td>Tests inequality of a and b</td></tr>
+        <tr><td>assertTrue(x)</td><td>Tests if condition evaluates to True</td></tr>
+        <tr><td>assertFalse(x)</td><td>Tests if condition evaluates to False</td></tr>
+        <tr><td>assertIs(a, b)</td><td>Tests if a is the same as b</td></tr>
+        <tr><td>assertIsNot(a, b)</td><td>Tests if a is not the same as b</td></tr>
+        <tr><td>assertIsNone(x)</td><td>Tests if x is None</td></tr>
+        <tr><td>assertIsNotNone(x)</td><td>Tests if x is not None</td></tr>
+        <tr><td>assertIn(a, b)</td><td>Tests if a exists in b</td></tr>
+        <tr><td>assertNotIn(a, b)</td><td>Tests if a does not exist in b</td></tr>
+        <tr><td>assertIsInstance(a, b)</td><td>Tests if a is an instance of class b</td></tr>
+        <tr><td>assertNotIsInstance(a, b)</td><td>Tests if a is not an instance of class b</td></tr>
+    </table>
+
+    <h2>Debugger</h2>
+    <ul>
+        <li>Debugging helps locate and fix issues in code.</li>
+        <li>Error messages are usually clear, but sometimes debugging requires stepping line by line.</li>
+        <li>The <code>pdb</code> library provides debugging tools.</li>
+    </ul>
+
+    <h3>Debugger Commands</h3>
+    <table>
+        <tr><th>Command</th><th>Key</th><th>Description</th></tr>
+        <tr><td>Next</td><td>n</td><td>Execute the next line</td></tr>
+        <tr><td>Print</td><td>p</td><td>Print the value of a variable</td></tr>
+        <tr><td>Repeat</td><td>Enter</td><td>Repeat the last command</td></tr>
+        <tr><td>List</td><td>l</td><td>Show lines around the current line</td></tr>
+        <tr><td>Step</td><td>s</td><td>Step into a subroutine</td></tr>
+        <tr><td>Return</td><td>r</td><td>Run until the current subroutine returns</td></tr>
+        <tr><td>Continue</td><td>c</td><td>Continue execution</td></tr>
+        <tr><td>Quit</td><td>q</td><td>Quit debugging</td></tr>
+    </table>
+
+    <h2>Decorators</h2>
+    <ul>
+        <li>Decorators modify the behavior of functions or classes.</li>
+        <li>They wrap a method, perform checks or tasks, and then run the method.</li>
+        <li>Functions can be passed into other functions and executed within wrappers.</li>
+        <li>Attach decorators with the <code>@</code> symbol above a function definition.</li>
+    </ul>
+
+    <h2>Lambda</h2>
+    <ul>
+        <li>Lambda defines anonymous functions in Python.</li>
+        <li>They are inline, neat, and flexible.</li>
+        <li>You can extend their functionality inside methods.</li>
+        <li>Example: Define a lambda that raises a number to the power of n, then create <code>cube_it</code> or <code>square_it</code> functions.</li>
+    </ul>
+
+    <h2>Code Profiling</h2>
+    <ul>
+        <li>Evaluates efficiency, memory consumption, and speed.</li>
+        <li>Measures execution time, call frequency, etc.</li>
+        <li>This process is called <b>profiling</b>.</li>
+        <li>Python’s <code>cProfile</code> library provides profiling statistics.</li>
+    </ul>
+
+    <div class="recap">
+        <h2>Recap</h2>
+        <ul>
+            <li>Testing</li>
+            <li>Python Debugger</li>
+            <li>Decorators</li>
+            <li>Lambda</li>
+            <li>Code Profiling</li>
+        </ul>
+    </div>
+
+</body>
+</html>

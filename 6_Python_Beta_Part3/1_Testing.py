@@ -15,6 +15,9 @@ Let’s write a test case to ensure that our code does the following things it i
 • Return a data type of string
 • The string contains two words that are separated by space 
 • Each of those words is capitalized
+
+Intention is to ensure our code behaves exactly how we want them to. Hence, you can work on improving your 
+code as long as it returns two strings which are capitalized.
 """
 
 
