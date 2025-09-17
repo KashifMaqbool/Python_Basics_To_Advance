@@ -1,0 +1,5 @@
+[Settings]
+root_directory = /Users/kashif/marketing_software
+username = admin_user
+number_of_databases = 3
+summary_unit = percent
