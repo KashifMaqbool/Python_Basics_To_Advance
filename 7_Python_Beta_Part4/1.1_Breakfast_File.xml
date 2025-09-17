@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<breakfast_menu>
+    <food id="f001">
+        <name>Pancakes</name>
+        <price>$5.95</price>
+        <calories>350</calories>
+        <description>Delicious fluffy pancakes served with maple syrup and butter.</description>
+    </food>
+    <food id="f002">
+        <name>Waffles</name>
+        <price>$6.95</price>
+        <calories>400</calories>
+        <description>Crispy golden waffles with fresh strawberries and whipped cream.</description>
+    </food>
+    <food id="f003">
+        <name>French Toast</name>
+        <price>$6.50</price>
+        <calories>380</calories>
+        <description>Classic French toast sprinkled with cinnamon sugar.</description>
+    </food>
+    <food id="f004">
+        <name>Omelette</name>
+        <price>$7.25</price>
+        <calories>420</calories>
+        <description>Three-egg omelette with cheese, mushrooms, and vegetables.</description>
+    </food>
+    <food id="f005">
+        <name>Fruit Salad</name>
+        <price>$4.50</price>
+        <calories>200</calories>
+        <description>A refreshing mix of seasonal fruits and yogurt.</description>
+    </food>
+</breakfast_menu>
