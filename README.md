@@ -95,7 +95,7 @@ This project is licensed under a **Creative Commons Attribution-NonCommercial 4.
 ---
 
 ## 🙌 Author
-**Kashif Maqbool**  
+**KASHIF MAQBOOL JOIYA**  
 🎓 Data Analyst & Data Scientist | Aspiring AI Engineer  
 💻 Passionate about Open Source, Data Science, Big Data, and AI Systems  
 
